@@ -5,6 +5,8 @@ Background:
 ----------------
 In order to reclaim space when converting a VMDK volume from thick to thin provisioning, it is often necessary to use the Microsoft Sysinternals sdelete.exe utility to "zero out" disk space previously occupied by files that have been deleted or moved. 
 
+In general, this process is carried out prior to completing a storage vMotion whereby Thick Provisioned virtual disks will be converted to Thin Provisioned virtual disks.
+
 Overview:
 ----------------
 This is a PowerShell script that performs the following functions:
