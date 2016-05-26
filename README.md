@@ -10,9 +10,13 @@ In general, this process is carried out prior to completing a storage vMotion wh
 Overview:
 ----------------
 This is a PowerShell script that performs the following functions:
+
 1.) Retrieves sdelete.exe from a network SMB/CIFS share
+
 2.) Automatically accepts the sdelete.exe EULA
+
 3.) Retrieves a list of local volumes attached to the guest
+
 4.) Runs the command: sdelete.exe -z <volume> for every local volume attached to the guest, cycling through each volume in turn.
 
 Usage:
